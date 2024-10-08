@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsold-Product</title>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: black;
+        color:#fff;
+    }
+    @media(max-width:414px){
+        .header{
+            /* border: 1px solid #fff; */
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            background-color: black;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 8px 32px 8px rgba(143, 141, 141, 0.2);
+        }
+        .header h1 span{
+            color: gold;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            border: 1px solid black;
+            position: fixed;
+            background-color:black;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            box-shadow: 0px 8px 32px 8px rgba(143, 141, 141, 0.2);
+        }
+        ul div{
+            margin: 0px 10px;
+        }
+        ul div img{
+            width: 35px;
+            
+        }
+        ul a{
+            text-decoration: none;
+            color:#fff;
+            font-size: 20px;
+            font-weight: 500;
+            transition: .3s;
+        }
+        ul  a:hover{
+            color: gold;
+        }
+        .active{
+            color: gold;
+        }
+        /* css for product section */
+
+        .product{
+            /* border: 1px solid #fff; */
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom:100px;
+        }
+        .p{
+            border: 1px solid #fff;
+            width: 150px;
+            height: 320px;
+            overflow: auto;
+            padding: 10px;
+            border-radius: 5px;
+           margin: 10px auto;
+        }
+        .p img{
+            width: 150px;
+            border-radius: 5px;
+        }
+        .p h2{
+            padding-bottom: 10px;
+        }
+        .p div{
+            /* border: 1px solid #fff; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px auto;
+        }
+        .p div img{
+            width: 30px;
+           
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Unsold_<span>Clothes</span></h1>
+            <ul>
+                <div>
+                    <a href="#" class="active">
+                        <img src="img/home.png" alt="">
+                        <li>Home</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/shopping-cart.png" alt="">
+                        <li>Buy</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/personal.png" alt="">
+                        <li>Sell</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="img/profile.png" alt="">
+                        <li>Account</li>
+                    </a>
+                </div>
+            </ul>
+    </div>
+
+    <!-- code for product -->
+
+    <div class="product">
+        <div class="p">
+            <img src="img/Roadster.webp" alt="">
+            <h2>Round Neck Pure Cotton Brown T-Shirt</h2>
+            <h3>₹222</h3>
+            <div>
+                <img src="img/google-maps.png" alt="">
+                <p>Bhakti Nagar, Mandvi Kutch</p>
+            </div>
+        </div>
+
+        <div class="p">
+            <img src="img/Magneto.webp" alt="">
+            <h2>Round Neck Pure Cotton White T-Shirt</h2>
+            <h3>₹299</h3>
+            <div>
+                <img src="img/google-maps.png" alt="">
+                <p>Nilkhanth Nagar, Mandvi Kutch</p>
+            </div>
+        </div>
+
+        <div class="p">
+            <img src="img/black.webp" alt="">
+            <h2>Round Neck Pure Cotton Brown T-Shirt</h2>
+            <h3>₹222</h3>
+            <div>
+                <img src="img/google-maps.png" alt="">
+                <p>Dhaval Nagar, Mandvi Kutch</p>
+            </div>
+        </div>
+
+
+        <div class="p">
+            <img src="img/check.webp" alt="">
+            <h2>Striped Men Polo Neck</h2>
+            <h3>₹239</h3>
+            <div>
+                <img src="img/google-maps.png" alt="">
+                <p>Shiv Nagar, Mandvi Kutch</p>
+            </div>
+        </div>
+
+       
+
+
+       
+    </div>
+
+    
+
+   
+
+
+</body>
+</html>
