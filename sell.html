@@ -68,69 +68,51 @@
         .active{
             color: gold;
         }
-        /* css for product section */
+        /* css for sell product */
 
-        .product{
+        .nav{
             /* border: 1px solid #fff; */
             width: 100%;
             box-sizing: border-box;
-            padding: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-bottom:100px;
-        }
-        .p{
-            border: 1px solid #fff;
-            width: 150px;
-            height: 320px;
-            overflow: auto;
-            padding: 10px;
-            border-radius: 5px;
-           margin: 10px auto;
-        }
-        .p img{
-            width: 150px;
-            border-radius: 5px;
-        }
-        .p h2{
-            padding-bottom: 10px;
-        }
-        .p div{
-            /* border: 1px solid #fff; */
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin: 10px auto;
+            margin: 30px auto;
         }
-        .p div img{
-            width: 30px;
-           
-        }
-        /* css for category section */
-
-        .category{
-            /* border: 1px solid #fff; */
-            text-align: center;
-            margin: 20px auto;
-            justify-content: center;
+        .nav div{
             width: 100%;
-            box-sizing: border-box;
-        }
-        .category button{
-            padding: 8px 20px;
-            font-size: 20px;
-            margin: 0px 10px;
-            background: transparent;
-            color: #fff;
-            border: 1px solid gold;
-            border-radius:5px;
+            display: flex;
             align-items: center;
-            transition: 1s;
-            font-weight: 500;
         }
-        .category button:hover{
-            color: gold;
+        .nav div img{
+            width: 50px;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .nav div h1{
+            font-size: 40px;
+            color:gold;
+        }
+
+        /* css for category menu */
+
+        .menu{
+            /* border-top: 1px solid #fff; */
+            justify-content: center;
+        }
+        .menu div{
+            display: flex;
+            align-items: center;
+            margin: 0px 20px;
+            padding: 15px 0px;
+            border-bottom: 2px solid gold;
+            transition: 0.3s;
+        }
+        .menu div:hover{
+            border-bottom: 2px solid #fff;
+        }
+        .menu div img{
+            width: 50px;
+            margin-right: 10px;
         }
     }
 </style>
@@ -140,14 +122,14 @@
         <h1>Unsold_<span>Clothes</span></h1>
             <ul>
                 <div>
-                    <a href="index.html" class="active">
+                    <a href="index.html" >
                         <img src="img/home.png" alt="">
                         <li>Home</li>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="sell.html">
+                    <a href="sell.html" class="active">
                         <img src="img/personal.png" alt="">
                         <li>Sell</li>
                     </a>
@@ -161,61 +143,31 @@
             </ul>
     </div>
 
+    <!-- code for sell product -->
 
-    <!-- code for category section -->
-
-    <div class="category">
-        <button>Mens</button>
-        <button>Womens</button>
-        <button>Kids</button>
+    <div class="nav">
+        <div>
+            <a href="index.html"><img src="img/left.png" alt=""></a>
+            <h1>Fashion</h1>
+        </div>
     </div>
 
+    <!-- code category menu -->
 
-    <!-- code for product -->
-
-
-    <div class="product">
-        
-        <div class="p">
-            <img src="img/Roadster.webp" alt="">
-            <h2>Round Neck Pure Cotton Brown T-Shirt</h2>
-            <h3>₹222</h3>
-            <div>
-                <img src="img/google-maps.png" alt="">
-                <p>Bhakti Nagar, Mandvi Kutch</p>
-            </div>
+    <div class="menu">
+        <div>
+            <img src="img/young-man.png" alt="">
+            <h1>Mens</h1>
         </div>
-
-        <div class="p">
-            <img src="img/Magneto.webp" alt="">
-            <h2>Round Neck Pure Cotton White T-Shirt</h2>
-            <h3>₹299</h3>
-            <div>
-                <img src="img/google-maps.png" alt="">
-                <p>Nilkhanth Nagar, Mandvi Kutch</p>
-            </div>
+        <div>
+            <img src="img/businesswoman.png" alt="">
+            <h1>Womens</h1>
         </div>
-
-        <div class="p">
-            <img src="img/black.webp" alt="">
-            <h2>Round Neck Pure Cotton Brown T-Shirt</h2>
-            <h3>₹222</h3>
-            <div>
-                <img src="img/google-maps.png" alt="">
-                <p>Dhaval Nagar, Mandvi Kutch</p>
-            </div>
+        <div>
+            <img src="img/boy.png" alt="">
+            <h1>Kids</h1>
         </div>
-
-
-        <div class="p">
-            <img src="img/check.webp" alt="">
-            <h2>Striped Men Polo Neck</h2>
-            <h3>₹239</h3>
-            <div>
-                <img src="img/google-maps.png" alt="">
-                <p>Shiv Nagar, Mandvi Kutch</p>
-            </div>
-        </div> 
     </div>
+
 </body>
 </html>
