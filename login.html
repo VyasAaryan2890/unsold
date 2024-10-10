@@ -68,7 +68,7 @@
         .active{
             color: gold;
         }
-        /* css for sell product */
+        /* nav */
 
         .nav{
             /* border: 1px solid #fff; */
@@ -76,7 +76,7 @@
             box-sizing: border-box;
             display: flex;
             align-items: center;
-            margin: 30px auto;
+            margin: 15px auto;
         }
         .nav div{
             width: 100%;
@@ -92,31 +92,54 @@
             font-size: 40px;
             color:gold;
         }
+        /* css for register */
 
-        /* css for category menu */
-
-        .menu{
-            /* border-top: 1px solid #fff; */
-            justify-content: center;
-        }
-        .menu div{
+        .register{
+            /* border: 1px solid #fff; */
+            width: 100%;
+            box-sizing: border-box;
             display: flex;
+            flex-direction: column;
+            text-align: center;
             align-items: center;
-            margin: 0px 20px;
-            padding: 15px 0px;
-            border-bottom: 2px solid gold;
-            transition: 0.3s;
+            height: 350px;
+            /* border: 1px solid #fff; */
         }
-        .menu div:hover{
-            border-bottom: 2px solid #fff;
+        .register h1{
+            font-size: 45px;
+            margin-bottom: 10px;
+           
         }
-        .menu div img{
-            width: 50px;
-            margin-right: 10px;
+        .register form{
+            display: flex;
+            flex-direction: column;
         }
-        .menu a{
+    
+        .register form input{
+            margin: 10px;
+            padding: 10px ;
+            width: 90%;
+            font-size: 20px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+        .register form button{
+            font-size: 20px;
+            width: 50%;
+            margin: 10px auto;
+            padding: 8px 0px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+        }
+        form p{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        form p a{
             text-decoration: none;
-            color:#fff;
+            color:gold;
         }
     }
 </style>
@@ -126,20 +149,20 @@
         <h1>Unsold_<span>Clothes</span></h1>
             <ul>
                 <div>
-                    <a href="index.html" >
+                    <a href="index.html">
                         <img src="img/home.png" alt="">
                         <li>Home</li>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="sell.html" class="active">
+                    <a href="sell.html">
                         <img src="img/personal.png" alt="">
                         <li>Sell</li>
                     </a>
                 </div>
                 <div>
-                    <a href="account.html">
+                    <a href="account.html" class="active">
                         <img src="img/profile.png" alt="">
                         <li>Account</li>
                     </a>
@@ -151,36 +174,22 @@
 
     <div class="nav">
         <div>
-            <a href="index.html"><img src="img/left.png" alt=""></a>
-            <h1>Fashion</h1>
+            <a href="account.html"><img src="img/left.png" alt=""></a>
+            <!-- <h1>Add details</h1> -->
         </div>
     </div>
 
-    <!-- code category menu -->
+    <!-- code for register  -->
 
-    <div class="menu">
-
-    <a href="mens.html">
-        <div>
-            <img src="img/young-man.png" alt="">
-            <h1>Mens</h1>
-        </div>
-    </a>
-
-    <a href="mens.html">
-        <div>
-            <img src="img/businesswoman.png" alt="">
-            <h1>Womens</h1>
-        </div>
-    </a>
-
-    <a href="mens.html">
-        <div>
-            <img src="img/boy.png" alt="">
-            <h1>Kids</h1>
-        </div>
-    </a>
+    <div class="register">
+        <h1>Login</h1>
+            <form>
+                <input type="email" placeholder="Enter Email"required>
+                <input type="password" placeholder="Enter Password"required>
+                <button>Submit</button>
+                <p>If You Don't Have An Account <a href="register.html"> Click Here?</a></p>
+            </form>
     </div>
-
+    
 </body>
 </html>
